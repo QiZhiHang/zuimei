@@ -18,7 +18,7 @@ class Index extends Base
         $mysql_v = Db::query('select VERSION() as v');
         $info = array(
             '操作系统'=>PHP_OS,
-            '运行环境'=>$_SERVER["SERVER_SOFT   WARE"],
+            '运行环境'=>$_SERVER["SERVER_SOFTWARE"],
             '环境版本' => 'PHP: '.phpversion().' &nbsp;&nbsp;&nbsp;&nbsp; MYSQL: '.$mysql_v[0]['v'],
             '主机名'=>$_SERVER['SERVER_NAME'],
             'WEB服务端口'=>$_SERVER['SERVER_PORT'],

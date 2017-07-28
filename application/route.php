@@ -16,5 +16,6 @@ Route::group('admin',function(){
     Route::resource('web_menu', 'admin/web_menu'); //web前台菜单
     Route::resource('qzh', 'admin/qzh'); //个人链接
     Route::resource('tankuang', 'admin/tankuang'); //商品弹窗显示
+    Route::resource('news','admin/news');
 
 });
